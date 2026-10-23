@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Shahd Al Thawabtah</title>
-    <link rel="icon" href="img/icon.jpg">
+    <link rel="icon" href="img/icon.png">
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <header>
         <nav class="container">
             <a href="#home" class="logo">
-                <img src="img/icon.jpg" alt="Logo">
+                <img src="img/icon.png" alt="SH Portfolio Logo">
             </a>
             <div class="links">
                 <a href="#home">Home</a>
@@ -50,16 +50,17 @@
     </div>
 
     <main>
-        <!-- HOME -->
+        <!-- HOME SECTION -->
         <section class="hero" id="home">
+
             <div class="container hero-content">
 
                 <!-- Profile Image -->
                 <div class="div_img">
-                    <img class="person" src="img/home.jpg" alt="Shahd Al Thawabtah">
+                    <img src="img/home.jpg" alt="Shahd Al Thawabtah" class="person">
                 </div>
 
-                <!-- Hero Text -->
+                <!-- Text Content -->
                 <div class="div_text">
 
                     <h4>Hi, I'm</h4>
@@ -72,18 +73,28 @@
 
                     <p>
                         I'm a third-year Software Engineering student.
-                        I'm currently learning Web Programming and I enjoy designing and building websites.
-                        I love learning new things and improving my programming skills.
+                        I'm currently learning Web Programming and I enjoy
+                        designing and building websites. I love learning
+                        new things and improving my programming skills.
                     </p>
 
                     <div class="btns">
-                        <a href="#contact" class="btn">Hire Me</a>
-                        <a href="#" class="btn_no_bg">Download Resume</a>
+
+                        <a href="#contact" class="btn">
+                            Hire Me
+                        </a>
+
+                        <a href="files/Shahd_Al_Thawabtah_CV.pdf" class="btn_no_bg" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
         <!-- ABOUT -->
@@ -188,6 +199,11 @@
                         <h3>GitHub</h3>
                     </div>
 
+                    <div class="skill-card">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h3>JavaFX</h3>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -282,7 +298,8 @@
                 <!-- Social Links -->
                 <div class="contact-list">
 
-                    <a href="mailto:shahd00mhmad@gmail.com">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahd00mhmad@gmail.com" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="fa-solid fa-envelope"></i>
                         shahd00mhmad@gmail.com
                     </a>
@@ -314,6 +331,10 @@
         <p>&copy; 2026 Shahd Al Thawabtah. All rights reserved.</p>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 </body>
 
 </html>
