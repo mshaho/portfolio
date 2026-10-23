@@ -270,7 +270,7 @@
                 </p>
 
                 <!-- Contact Form -->
-                <form class="contact-form" action="https://formspree.io/f/mvkzewdy" method="POST" target="_blank">
+               <form id="contactForm" class="contact-form" action="https://formspree.io/f/mvkzewdy" method="POST">
 
                     <div class="form-group">
                         <label for="name">Your Name</label>
@@ -335,6 +335,32 @@
     <a href="#home" class="back-to-top" aria-label="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+    <script>
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: new FormData(contactForm),
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+            contactForm.reset();
+            alert("Message sent successfully!");
+        } else {
+            alert("Failed to send message.");
+        }
+    } catch (error) {
+        alert("Something went wrong.");
+    }
+});
+</script>
 </body>
 
 </html>
